@@ -98,4 +98,4 @@ CI 失败不等于 OPT 本身失败。
 
 日志和截图请先检查隐私信息。
 
-不确定该不该发 Issue 时，请先去 [Discussions](../../discussions)。
+不确定该不该发 Issue 时，请先去 [Discussions](https://github.com/wiswind/OPT-AI/discussions)。
