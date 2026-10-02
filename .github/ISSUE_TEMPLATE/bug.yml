@@ -1,0 +1,116 @@
+name: Bug 报告
+description: 可以稳定复现的 OPT 产品错误、崩溃或异常行为
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈。  
+        如果你还不确定这是不是 Bug，请优先到 Discussions 提问。
+
+        **请不要上传 Token、密码、私有仓库源码或未经检查的完整日志。**
+
+  - type: input
+    id: version
+    attributes:
+      label: OPT 版本
+      description: 例如 0.3.0-alpha.1
+      placeholder: 0.3.0-alpha.1
+    validations:
+      required: true
+
+  - type: input
+    id: windows
+    attributes:
+      label: Windows 版本
+      description: 例如 Windows 11 24H2 x64 / Windows 10 22H2 x64
+      placeholder: Windows 11 24H2 x64
+    validations:
+      required: true
+
+  - type: input
+    id: display
+    attributes:
+      label: 屏幕分辨率与缩放
+      description: 如果与界面无关可写“不相关”
+      placeholder: 1920×1080，125%
+    validations:
+      required: true
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: 你原本想完成什么？
+      description: 用一句话描述目标即可。
+      placeholder: 我想把一个已有 GitHub 项目准备到 READY。
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 请按实际顺序写关键操作。
+      placeholder: |
+        1. 打开 OPT
+        2. 进入项目
+        3. 选择……
+        4. 点击……
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际发生了什么？
+      description: 包括界面提示、错误、停住的位置或异常表现。
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 你原本预期什么？
+      description: 不需要替产品设计方案，只写你自然认为应该发生什么。
+    validations:
+      required: true
+
+  - type: dropdown
+    id: reproducibility
+    attributes:
+      label: 是否可复现？
+      options:
+        - 每次都会发生
+        - 经常发生
+        - 偶尔发生
+        - 只发生过一次
+        - 暂时无法确认
+    validations:
+      required: true
+
+  - type: dropdown
+    id: restart
+    attributes:
+      label: 重启 OPT 后是否仍然发生？
+      options:
+        - 是
+        - 否
+        - 没有尝试
+        - 不适用
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 截图、错误信息或经过检查的日志
+      description: 可拖入截图。日志请先删除敏感信息。应用异常日志默认位于 %LOCALAPPDATA%\OPTAssetLite\logs\app.log
+      placeholder: 如有请粘贴；没有可以留空。
+
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 隐私确认
+      options:
+        - label: 我已检查准备公开提交的内容，不包含 Token、密码、私有源码或其他不应公开的信息。
+          required: true

@@ -1,0 +1,41 @@
+name: 文档问题
+description: 文档错误、过时、链接失效或某一步看不懂
+title: "[文档] "
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 问题类型
+      options:
+        - 内容错误
+        - 内容过时
+        - 步骤不清楚
+        - 链接失效
+        - 缺少必要说明
+        - 其他
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: 哪个页面 / 哪一段？
+      description: 可以贴 GitHub 页面链接或写文档名称。
+      placeholder: docs/GETTING-STARTED.md 的“第一次启动”
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 哪里有问题？
+      placeholder: 我按照这里操作后，不知道下一步应该在哪里检查 Runner。
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 你觉得缺少什么信息？
+      description: 不需要替我们完整改写，告诉我们你当时需要知道什么即可。
+      placeholder: 希望明确告诉我“Runner 离线”和“尚未配置 Runner”是不是同一回事。

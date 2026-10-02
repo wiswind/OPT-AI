@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 使用问题 / 不确定是不是 Bug
+    url: https://github.com/wiswind/OPT-AI/discussions
+    about: 先到 Discussions 提问，我们会帮你判断是否需要转成 Issue。
+  - name: 功能想法 / 使用体验
+    url: https://github.com/wiswind/OPT-AI/discussions
+    about: 功能建议、工作流想法和开放讨论优先放在 Discussions。
+  - name: 安全问题
+    url: https://github.com/wiswind/OPT-AI/blob/main/SECURITY.md
+    about: 涉及 Token、权限、数据或其他安全风险时，请不要创建公开 Issue。
