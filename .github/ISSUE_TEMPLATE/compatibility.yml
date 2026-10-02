@@ -1,0 +1,88 @@
+name: 环境 / 兼容性问题
+description: Windows、GitHub、Runner、Bridge、CI 或本机环境相关问题
+title: "[环境] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        这个模板适合“OPT 本身能打开，但在某台机器、Runner、GitHub 或 CI 环境中走不通”的情况。
+
+        **不要为了复现问题主动破坏一个已经工作的真实环境。**
+
+  - type: input
+    id: version
+    attributes:
+      label: OPT 版本
+      placeholder: 0.3.0-alpha.1
+    validations:
+      required: true
+
+  - type: input
+    id: windows
+    attributes:
+      label: Windows 版本
+      placeholder: Windows 10 22H2 x64
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: 主要涉及哪一类环境？
+      options:
+        - GitHub 登录 / 仓库
+        - Runner
+        - Bridge
+        - Workflow / CI
+        - 项目路径 / Git
+        - Brain / 记忆环境
+        - Windows / 权限
+        - 网络
+        - 不确定
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: 环境说明
+      description: 不要填写 Token、密码。机器名和私有路径如果介意公开，可以做脱敏。
+      placeholder: |
+        - 新机器 / 已用一段时间的机器：
+        - Runner 之前是否正常：
+        - 是否最近换过网络、项目路径或 Windows 用户：
+    validations:
+      required: true
+
+  - type: textarea
+    id: symptom
+    attributes:
+      label: 现在看到什么现象？
+      placeholder: 例如 Runner 一直显示离线，但 GitHub 页面显示 Runner 在线。
+    validations:
+      required: true
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: 已经尝试过什么？
+      description: 写你确实做过的操作即可，不需要提前做额外破坏性测试。
+      placeholder: 例如刷新状态、重启 OPT、重新打开项目。
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 截图 / 错误信息 / 经过检查的诊断材料
+      description: 如果涉及 Support Bundle，请先检查其中的路径、机器名、仓库和其他隐私信息。
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: 安全确认
+      options:
+        - label: 我没有为了制造故障而主动破坏一个正在工作的真实 Runner / Git 环境。
+          required: true
+        - label: 我已检查公开内容，不包含 Token、密码或不应公开的私有信息。
+          required: true
