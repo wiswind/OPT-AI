@@ -4,7 +4,7 @@
 
 ## 1. 下载
 
-前往 [Releases](../../releases) 下载最新的 Alpha 01 Windows x64 压缩包。
+前往 [Releases](https://github.com/wiswind/OPT-AI/releases) 下载最新的 Alpha 01 Windows x64 压缩包。
 
 请只使用本仓库 Releases 发布的正式测试包。
 
@@ -65,8 +65,8 @@ OPT Alpha 01 的一个重要目标，就是尽量避免只给内部错误码而�
 仍无法继续时：
 
 1. 看 [故障排查](TROUBLESHOOTING.md)。
-2. 不确定是不是 Bug：到 [Discussions](../../discussions) 提问。
-3. 能稳定复现：到 [Issues](../../issues) 提交 Bug。
+2. 不确定是不是 Bug：到 [Discussions](https://github.com/wiswind/OPT-AI/discussions) 提问。
+3. 能稳定复现：到 [Issues](https://github.com/wiswind/OPT-AI/issues) 提交 Bug。
 4. 不要把 Token、密码、完整私有仓库内容贴到公开页面。
 
 ## 6. 建议第一次体验什么
