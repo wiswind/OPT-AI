@@ -63,6 +63,6 @@ Alpha 01 不是正式版，也不是一次“大而全”的功能展示。
 
 ## 反馈入口
 
-- 使用问题与想法：[Discussions](../../discussions)
-- 可复现 Bug：[Issues](../../issues)
+- 使用问题与想法：[Discussions](https://github.com/wiswind/OPT-AI/discussions)
+- 可复现 Bug：[Issues](https://github.com/wiswind/OPT-AI/issues)
 - 安全问题：[SECURITY.md](../SECURITY.md)
